@@ -1,0 +1,48 @@
+/* miniprogram/pages/user/tools/tools.wxss */
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+.pre{
+  width:100%;
+  height: 150px;
+  background-color: rgba(135, 206, 235,0.6);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.pre image{
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+.pre .gogogo{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.others{
+  width:100%;
+  height: 150px;
+  background-color:rgba(135, 206, 235,0.6);
+  border-radius: 15px;
+  position: relative;
+}
+.others image{
+  float: right;
+  width: 150px;
+  height: 150px;
+}
+.others text{
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+}
+.gif{
+  opacity: 0.8;
+}

@@ -1,0 +1,33 @@
+/* miniprogram/pages/user/suggestion/suggestion.wxss */
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+.container image{
+  width: 100%;
+  height: 100%;
+}
+.title{
+  margin: 20px auto;
+}
+.title image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.fb_content{
+  width: 95%;
+  margin: 0 auto;
+  border: 1px solid #666;
+  background-color: rgba(255, 255, 255,0.5);
+}
+.form_btn_wrap button{
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: #94ebbb;
+}
+.form_btn_wrap button:active{
+  background-color: #67dfdb;
+}

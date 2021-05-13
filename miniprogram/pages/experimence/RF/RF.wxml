@@ -1,0 +1,12 @@
+<!--miniprogram/pages/experience/RF/RF.wxml-->
+<image class="bg" src="../../../images/bg-4.png"></image>
+<view class="titleContainer">
+  <view class="big-title">RF算法模型</view>
+</view>
+<view class='input-container'>
+  <image src="../../../images/bearing2.gif"></image>
+  <view class='line'></view>
+  <form bindsubmit='formsubmit'>
+    <button class='btn' style="bottom:1%" form-type='submit'>查看返回指标</button>
+  </form>
+</view>

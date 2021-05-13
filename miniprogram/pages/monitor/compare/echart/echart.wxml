@@ -1,0 +1,26 @@
+<!--miniprogram/pages/monitor/compare/echart/echart.wxml-->
+<image class="bg" src="../../../../images/bg-3.jpg"></image>
+
+<view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{arrayName}}">
+    <view class="picker">
+      <text style="font-size:14px">请选择设备A：</text>
+      <text style="color:#237ab7;font-weight:bold">{{arrayName[index]}}</text>
+      <image src="../../../../images/down.png" style="width:15px;height:15px"></image>
+    </view>
+  </picker>
+  <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{arrayName}}">
+    <view class="picker">
+      <text style="font-size:14px">请选择设备B：</text>
+      <text style="color:#237ab7;font-weight:bold">{{arrayName[index2]}}</text>
+      <image src="../../../../images/down.png" style="width:15px;height:15px"></image>
+    </view>
+  </picker>
+</view>
+<view class="return" bindtap="returnTap">返回</view>
+<text class="info">对比工况：振动信号</text>
+<view class="echart-container">
+  <view class="container">
+    <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+  </view>
+</view>

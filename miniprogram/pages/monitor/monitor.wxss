@@ -1,0 +1,51 @@
+/* miniprogram/pages/monitor/monitor.wxss */
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.function-menu {
+  margin:30rpx auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.single-monitor,
+.compare-monitor {
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 50%;
+  margin: 10px auto;
+  
+  position: relative;
+}
+
+.function-menu image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.text1{
+  display: block;
+  position: absolute;
+  top: 110px;
+  left: 30px;
+  font-size:25px;
+  background-color: rgba(255, 246, 240,0.7);
+}
+.text2{
+  display: block;
+  position: absolute;
+  top: 110px;
+  left: 30px;
+  font-size:25px;
+  background-color: rgba(255, 246, 240,0.7);
+  
+}

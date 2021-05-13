@@ -1,0 +1,34 @@
+<!--miniprogram/pages/user/user.wxml-->
+<image class="bg" src="../../images/bg-3.jpg"></image>
+<view class="userinfo">
+  <view class="updown-image" bindtap='upload'>
+    <view class="personal-img">
+      <image src="{{head}}" mode="aspecFill" bindtap="headimage"></image>
+    </view>
+  </view>
+  <text class="username">用户名：{{storageContent}}</text>
+</view>
+<view class="add">
+  <view class="tools">
+    <navigator url="/pages/user/tools/tools">
+      <image style="width:15px;height:15px;margin-left:10px" src="../../images/Tools.png"></image>
+      <text>拓展工具</text>
+      <image class="arrow" src="../../images/arrow.png"></image>
+    </navigator>
+  </view>
+  <view class="team">
+    <navigator url="/pages/user/about/about">
+      <image style="width:15px;height:15px;margin-left:10px" src="../../images/about.png"></image>
+      <text>关于我们</text>
+      <image class="arrow" src="../../images/arrow.png"></image>
+    </navigator>
+  </view>
+  <view class="suggestion">
+    <navigator url="/pages/user/suggestion/suggestion">
+      <image style="width:15px;height:15px;margin-left:10px" src="../../images/suggestion.png"></image>
+      <text>意见反馈</text>
+      <image class="arrow" src="../../images/arrow.png"></image>
+    </navigator>
+  </view>
+
+</view>

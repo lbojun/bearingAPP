@@ -1,0 +1,29 @@
+<!--miniprogram/pages/experimence/result/result.wxml-->
+<image class="bg" src="../../../images/bg-4.png"></image>
+<view class="titleContainer">
+  <view class="big-title">查看实验结果</view>
+</view>
+
+<view class="table">
+  <view class="tr">
+    <view class="th">返回参数</view>
+    <view class="th">accuracy</view>
+    <view class="th">recall</view>
+    <view class="th">precision</view>
+    <view class="th">fMeasure</view>
+    <view class="th">rocArea</view>
+  </view>
+  <view class="td1">
+    <view class="td">RF算法</view>
+    <view class="td">{{resultArray[0]}}</view>
+    <view class="td">{{resultArray[1]}}</view>
+    <view class="td">{{resultArray[2]}}</view>
+    <view class="td">{{resultArray[3]}}</view>
+    <view class="td">{{resultArray[4]}}</view>
+  </view>
+</view>
+<view class="return" bindtap="returnTap">返回</view>
+
+<view class="chart-container">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ec}}"></ec-canvas>
+</view>

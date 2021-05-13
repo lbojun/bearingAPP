@@ -1,0 +1,6 @@
+<!--miniprogram/pages/experimence/experimence.wxml-->
+<image class="bg" src="../../images/bg-1.png"></image>
+<image class="mainpage-img" src="../../images/bearing.jpg"></image>
+<view class="start" bindtap="navToExp">
+  <text>点击进入轴承故障预测实验</text>
+</view>

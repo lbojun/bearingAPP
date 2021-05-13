@@ -1,0 +1,32 @@
+<view class="container">
+  <image src="../../../../images/bg-3.jpg"></image>
+</view>
+<view class="titleContainer">
+  <view class="big-title">我来给你预测预测！</view>
+</view>
+
+<view class='input-container'>
+  <view class='line'></view>
+  <form bindsubmit='formsubmit'>
+    <view class='input-item'>
+      <view class='param-name'>请输入X轴向的加速度：</view>
+      <input class='input' type='digit' value='xxx' name='inputValue1'></input>
+    </view>
+    <view class='input-item'>
+      <view class='param-name'>请输入Y轴向的加速度：</view>
+      <input class='input' type='digit' value='xxx' name='inputValue2'></input>
+    </view>
+    <button class='btn' form-type='submit'>提交参数</button>
+  </form>
+</view>
+
+<view class="result">
+  <text>该点的预测结果是：</text>
+  <view class="res">
+    <text style="color:green;font-weight:bold" data-i="i" wx:if='{{labels[i].predict ==0}}'>正常</text>
+    <text style="color:red;font-weight:bold" data-i="i" wx:elif='{{labels[i].predict ==1}}'>外环损伤一级</text>
+    <text style="color:red;font-weight:bold" data-i="i" wx:elif='{{labels[i].predict ==2}}'>外环损伤二级</text>
+    <text style="color:red;font-weight:bold" data-i="i" wx:elif='{{labels[i].predict ==3}}'>内环损伤一级</text>
+    <text style="color:red;font-weight:bold" data-i="i" wx:elif='{{labels[i].predict ==4}}'>内环损伤二级</text>
+  </view>
+</view>

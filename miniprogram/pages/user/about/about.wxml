@@ -1,0 +1,11 @@
+<!--miniprogram/pages/user/about/about.wxml-->
+<image class="bg" src="../../../images/paper.jpg"></image>
+<view class="content">
+  <text style="font-weight:bold">移动互联网课程设计</text>
+  <text style="font-weight:bold">组号：13</text>
+  <text style="font-weight:bold">成员：</text>
+  <text>刘俊龙</text>
+  <text>刘泊君</text>
+  <text>齐妙</text>
+  <text>刘婉芸</text>
+</view>

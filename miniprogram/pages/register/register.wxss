@@ -1,0 +1,59 @@
+/* miniprogram/pages/user/register/register.wxss */
+/* pages/login/login.wxss */
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.container image {
+  width: 100%;
+  height: 100%;
+}
+
+.login_box {
+  width: 90%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.section {
+  width: 100%;
+  border-bottom: 4rpx solid #000;
+  margin-top: 40rpx;
+  position: relative;
+}
+
+.section input {
+  height: 100rpx;
+  color: #000;
+  box-sizing: border-box;
+  padding-left: 80rpx;
+  font-size: 32rpx;
+}
+
+.section image {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 10rpx;
+}
+
+.color {
+  color: #666;
+}
+.register {
+  margin-top: 100rpx;
+  background: #fa5151 !important;
+  color: #FFF !important;
+  border-radius: 15px;
+}
+.login{
+  margin-top: 100rpx;
+  background-color: #32CD32 !important;
+  color: #FFF !important;
+  border-radius: 15px;
+}

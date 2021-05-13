@@ -1,0 +1,15 @@
+<!--miniprogram/pages/monitor/monitor.wxml-->
+<image class="bg" src="../../images/bg-3.jpg"></image>
+<view class="function-menu">
+  <view class="single-monitor"  bindtap="navToSingle">
+    <text class="text1">观察单个轴承数据</text>
+    <image src="../../images/single-bear.jpg"></image>
+  </view>
+  <view class="compare-monitor" bindtap="navToCom">
+    <text class="text2">对比两个轴承数据</text>
+    <image src="../../images/bearings.jpg"></image>
+  </view>
+  <!-- <view class="point-pre">
+    <navigator url="/pages/monitor/functions/pre/pre">试试单点预测？</navigator>
+  </view> -->
+</view>

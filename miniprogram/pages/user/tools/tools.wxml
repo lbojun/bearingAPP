@@ -1,0 +1,15 @@
+<!--miniprogram/pages/user/tools/tools.wxml-->
+<image class="bg" src="../../../images/bg-3.jpg"></image>
+<view class="pre">
+  <image src="../../../images/pre.png"></image>
+  <view class="gogogo">
+    <text class="pre-text">试试单点预测功能？</text>
+    <text style="font-size:12px">（单击前往）</text>
+    <image class="go" src="../../../images/go.png" style="width:100px;height:100px" bindtap="navToPre"></image>
+  </view>
+</view>
+<view class="others">
+  <text>更多功能敬请期待！</text>
+  <image src="../../../images/pre.png"></image>
+</view>
+<image class="gif" src="../../../images/bearing2.gif"></image>

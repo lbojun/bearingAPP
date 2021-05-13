@@ -1,0 +1,26 @@
+<image class="bg" src="../../../images/bg-4.png"></image>
+<view class="titleContainer">
+  <view class="big-title">特征提取</view>
+</view>
+
+<view class='input-container'>
+  <form bindsubmit='formsubmit'>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{tests}}">
+      <view class="picker">
+        <text style="font-size:14px">选择测试文件：</text>
+        <text style="color:#237ab7;font-weight:bold">{{tests[index]}}</text>
+        <image src="../../../images/down.png" style="width:15px;height:15px"></image>
+      </view>
+    </picker>
+
+    <view class='line'></view>
+    <view class='text'>
+      <text>此处提取的特征有：</text>
+      <text>时域</text>
+      <text>频域</text>
+      <text>时频域</text>
+    </view>
+
+    <button class='btn' form-type='submit'>开始提取</button>
+  </form>
+</view>

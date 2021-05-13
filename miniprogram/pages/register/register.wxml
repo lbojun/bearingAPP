@@ -1,0 +1,25 @@
+<!--miniprogram/pages/user/register/register.wxml-->
+<view class="container">
+  <image src="../../images/bg-3.jpg"></image>
+</view>
+<view class="login_box">
+  <view class="section">
+    <input placeholder="请输入用户名" placeholder-class="color" bindblur='username' />
+    <image src="../../images/users.png"></image>
+  </view>
+  <view class="section">
+    <input type='number' maxlength='11' placeholder="请输入手机号" placeholder-class="color" bindblur='mobile' />
+    <image src="../../images/phone-lined.png"></image>
+  </view>
+  <view class="section">
+    <input password="true" placeholder="请输入密码" placeholder-class="color" bindblur='pass1' />
+    <image src="../../images/password.png"></image>
+  </view>
+  <view class="section">
+    <input password="true" placeholder="确认密码" placeholder-class="color" bindblur='pass2' />
+    <image src="../../images/password.png"></image>
+  </view>
+  <button class="register" type="warn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">注   册</button>
+  <button class="login" type="warn" bindtap="login">已有账号？去登录</button>
+
+</view>

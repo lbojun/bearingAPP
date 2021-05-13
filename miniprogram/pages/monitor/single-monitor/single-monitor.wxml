@@ -1,0 +1,53 @@
+<image class="bg" src="../../../images/bg-3.jpg"></image>
+
+<view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{arrayName}}">
+    <view class="picker">
+      <text style="font-size:14px">选择观察设备号是：</text>
+      <text style="color:#237ab7;font-weight:bold">{{arrayName[index]}}</text>
+      <image src="../../../images/down.png" style="width:15px;height:15px"></image>
+    </view>
+  </picker>
+  <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{allConditionName}}">
+    <view class="picker">
+      <text style="font-size:14px">选择工况信息：</text>
+      <text style="color:#237ab7;font-weight:bold">{{allParams[index2].text}}</text>
+      <image src="../../../images/down.png" style="width:15px;height:15px"></image>
+    </view>
+  </picker>
+</view>
+
+<view class="box1">
+  <view class='nowTime'>
+    <text style="font-weight:bold">{{time}}</text>
+  </view>
+  <view class='nowStatus'>当前状态：
+    <text style="color:green;font-weight:bold" data-i="i" wx:if='{{labels[i] ==0}}'>正常</text>
+    <text style="color:red;font-weight:bold" data-i="i" wx:elif='{{labels[i] ==1}}'>外环损伤一级</text>
+    <text style="color:red;font-weight:bold" data-i="i" wx:elif='{{labels[i] ==2}}'>外环损伤二级</text>
+    <text style="color:red;font-weight:bold" data-i="i" wx:elif='{{labels[i] ==3}}'>内环损伤一级</text>
+    <text style="color:red;font-weight:bold" data-i="i" wx:elif='{{labels[i] ==4}}'>内环损伤二级</text>
+  </view>
+</view>
+<view class="chart">
+  <view class='gkContentBox'>
+    <view class="gkTitle">工况参数</view>
+    <view class="gkTitle">有效值</view>
+    <view class="gkTitle">历史最高值</view>
+    <view class="gkTitle">历史最低值</view>
+  </view>
+  <scroll-view scroll-x scroll-y style="width: 100%; height: 120px;margin-top:2px;margin-bottom:2px">
+    <view class='gkContentBox' wx:for='{{result}}' wx:for:item='item'>
+      <view class="gkTitle" style="font-weight:bold">{{item.key}}</view>
+
+      <view class="gkContent" style="color:#237ab7" data-i="i">{{item.arr[i]}}</view>
+      <view class="gkContent" style="color:orange">{{item.max}}</view>
+      <view class="gkContent" style="color:red">{{item.min}}</view>
+    </view>
+  </scroll-view>
+</view>
+<view class="echart-container">
+  <view class="container">
+    <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+  </view>
+</view>

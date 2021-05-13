@@ -1,0 +1,51 @@
+{
+  "pages": [
+    
+    "pages/register/register",
+    "pages/experimence/experimence",
+    "pages/monitor/compare/echart/echart",
+    "pages/monitor/compare/compare",
+    "pages/experimence/feature/feature",
+    "pages/experimence/RF/RF",
+    "pages/user/about/about",
+    "pages/monitor/single-monitor/single-monitor",
+    "pages/experimence/result/result",
+    "pages/user/user",
+    "pages/user/tools/tools",
+    "pages/user/tools/pre/pre",
+    "pages/monitor/monitor",
+    "pages/user/suggestion/suggestion",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "轴承故障预测实验",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/experimence/experimence",
+        "text": "实验",
+        "iconPath": "images/experience.png",
+        "selectedIconPath": "images/experience1.png"
+      },
+      {
+        "pagePath": "pages/monitor/monitor",
+        "text": "监控",
+        "iconPath": "images/monitor.png",
+        "selectedIconPath": "images/monitor1.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

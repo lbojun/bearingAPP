@@ -1,0 +1,15 @@
+<!--miniprogram/pages/user/suggestion/suggestion.wxml-->
+<view class="container">
+  <image src="../../../images/bg-3.jpg"></image>
+</view>
+<view class="title">
+  <image src="../../../images/excellence.png"></image>
+</view>
+<view class="fb_content">
+  <textarea value="{{textValue}}" bindinput="handleTextInput" placeholder="请描述一下问题"></textarea>
+</view>
+<view class="form_btn_wrap">
+  <button bindtap="handlefrom">
+    提交
+  </button>
+</view>
